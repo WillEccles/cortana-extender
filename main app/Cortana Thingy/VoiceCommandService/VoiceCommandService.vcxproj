@@ -221,11 +221,6 @@
     </ClCompile>
     <ClCompile Include="CEVoiceCommandService.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cortana Thingy\Cortana Thingy.vcxproj">
-      <Project>{a8625b75-085b-4738-a86d-805dff30463e}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

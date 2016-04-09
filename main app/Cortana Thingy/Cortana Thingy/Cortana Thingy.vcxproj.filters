@@ -54,4 +54,7 @@
   <ItemGroup>
     <Page Include="MainPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="CECommands.xml" />
+  </ItemGroup>
 </Project>

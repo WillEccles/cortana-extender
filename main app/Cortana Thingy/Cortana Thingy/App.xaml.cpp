@@ -30,6 +30,7 @@ using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 // required for cortana stuff
 using namespace Windows::ApplicationModel::VoiceCommands;
+using namespace Windows::Storage;
 
 /// <summary>
 /// Initializes the singleton application object.  This is the first line of authored code
@@ -88,6 +89,13 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 		Window::Current->Content = rootFrame;
 		// Ensure the current window is active
 		Window::Current->Activate();
+
+		try {
+			StorageFile vcdStorageFile = Package::Current->InstalledLocation->GetFileAsync("");
+		}
+		catch (Exception^ e) {
+			
+		}
 	}
 	else
 	{

@@ -9,3 +9,8 @@ CEVoiceCommandService::CEVoiceCommandService()
 {
 
 }
+
+void VoiceCommandService::CEVoiceCommandService::Run(IBackgroundTaskInstance ^ taskInstance)
+{
+	throw ref new Platform::NotImplementedException();
+}
