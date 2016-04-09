@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+	<!--MUST add one of these for every language supported-->
+	<CommandSet xml:lang="en-us" Name="CECommandSet_en-us">
+		<AppName>Cortana Extender</AppName>
+		<Example>What is a rock</Example>
+		
+		<Command Name="TestCommand">
+			<Example>What is a rock</Example>
+			<!--
+			EXAMPLES
+			<ListenFor RequireAppName="...">what is a rock</ListenFor>
+			<ListenFor RequireAppName="...">what is a {subject}</ListenFor>
+			<ListenFor RequireAppName="ExplicitlySpecified">what is [a] [an] {object}, {builtin:AppName}</ListenFor>
+			-->
+			<ListenFor>[I] [we] [they] want {tacos} tacos</ListenFor>
+			<Feedback>Sorry, I can't give you {tacos} tacos.</Feedback>
+			<Navigate/>
+		</Command>
+
+		<PhraseList Label="tacos">
+			<Item>420</Item>
+			<Item>69</Item>
+			<Item>12</Item>
+		</PhraseList>
+	</CommandSet>
+</VoiceCommands>
