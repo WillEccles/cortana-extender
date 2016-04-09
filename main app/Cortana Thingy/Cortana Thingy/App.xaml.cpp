@@ -7,8 +7,8 @@
 #include "MainPage.xaml.h"
 
 /*
-USEFUL LINKS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Launching a background app with cortana: https://msdn.microsoft.com/en-us/windows/uwp/input-and-devices/launch-a-background-app-with-voice-commands-in-cortana?f=255&MSPPError=-2147217396
+USEFUL LINKS
+Launching a background app with cortana: https://msdn.microsoft.com/en-us/windows/uwp/input-and-devices/launch-a-background-app-with-voice-commands-in-cortana
 
 */
 
@@ -28,6 +28,7 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Interop;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
+// required for cortana stuff
 using namespace Windows::ApplicationModel::VoiceCommands;
 
 /// <summary>
